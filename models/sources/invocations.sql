@@ -10,7 +10,7 @@ select
     cast('' as {{ type_string() }}) as command_invocation_id
     , cast('' as {{ type_string() }}) as dbt_version
     , cast('' as {{ type_string() }}) as project_name
-    , cast('' as {{ type_timestamp() }}) as run_started_at
+    , cast(1970-01-01 as {{ type_timestamp() }}) as run_started_at
     , cast('' as {{ type_string() }}) as dbt_command
     , cast('' as {{ type_boolean() }}) as full_refresh_flag
     , cast('' as {{ type_string() }}) as target_profile_name

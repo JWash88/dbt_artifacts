@@ -9,17 +9,17 @@ with
 select
     cast('' as {{ type_string() }}) as command_invocation_id
     , cast('' as {{ type_string() }}) as node_id
-    , cast('' as {{ type_timestamp() }}) as run_started_at
+    , cast(null as {{ type_timestamp() }}) as run_started_at
     , cast('' as {{ type_string() }}) as name
     , cast('' as {{ type_string() }}) as type
-    , cast('' as {{ type_json() }}) as owner
+    , cast(null as {{ type_json() }}) as owner
     , cast('' as {{ type_string() }}) as maturity
     , cast('' as {{ type_string() }}) as path
     , cast('' as {{ type_string() }}) as description
     , cast('' as {{ type_string() }}) as url
     , cast('' as {{ type_string() }}) as package_name
-    , cast('' as {{ type_array() }}) as depends_on_nodes
-    , cast('' as {{ type_array() }}) as tags
-    , cast('' as {{ type_json() }}) as all_results
+    , cast(null as {{ type_array() }}) as depends_on_nodes
+    , cast(null as {{ type_array() }}) as tags
+    , cast(null as {{ type_json() }}) as all_results
 from dummy_cte
 where 1 = 0

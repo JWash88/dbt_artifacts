@@ -9,7 +9,7 @@ with
 select
     cast('' as {{ type_string() }}) as command_invocation_id
     , cast('' as {{ type_string() }}) as node_id
-    , cast(1970-01-01 {{ type_timestamp() }}) as run_started_at
+    , cast(1970-01-01 as {{ type_timestamp() }}) as run_started_at
     , cast('' as {{ type_string() }}) as name
     , cast('' as {{ type_string() }}) as type
     , cast('' as {{ type_json() }}) as owner
